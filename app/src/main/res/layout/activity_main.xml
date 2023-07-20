@@ -1,0 +1,170 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/BtnNine"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+
+    <Button
+        android:id="@+id/Btn9"
+        android:layout_width="69dp"
+        android:layout_height="43dp"
+        android:layout_marginTop="28dp"
+        android:layout_marginEnd="52dp"
+        android:text="9"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/BtnSix" />
+
+    <Button
+        android:id="@+id/BtnSave"
+        android:layout_width="96dp"
+        android:layout_height="46dp"
+        android:layout_marginStart="68dp"
+        android:layout_marginTop="24dp"
+        android:text="Save"
+        app:layout_constraintEnd_toStartOf="@+id/BtnClear"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        android:onClick="phoneNumber"
+        app:layout_constraintTop_toBottomOf="@+id/BtnSeven" />
+
+    <Button
+        android:id="@+id/BtnClear"
+        android:layout_width="85dp"
+        android:layout_height="44dp"
+        android:layout_marginTop="28dp"
+        android:layout_marginEnd="20dp"
+        android:text="Clear"
+        app:layout_constraintEnd_toStartOf="@+id/BtnCall"
+        app:layout_constraintTop_toBottomOf="@+id/BtnEight" />
+
+    <Button
+        android:id="@+id/BtnCall"
+        android:layout_width="88dp"
+        android:layout_height="48dp"
+        android:layout_marginTop="28dp"
+        android:layout_marginEnd="36dp"
+        android:text="Call"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/Btn9" />
+
+    <Button
+        android:id="@+id/BtnFive"
+        android:layout_width="69dp"
+        android:layout_height="43dp"
+        android:layout_marginTop="32dp"
+        android:layout_marginEnd="32dp"
+        android:text="5"
+        android:onClick="inputNumber"
+        app:layout_constraintEnd_toStartOf="@+id/BtnSix"
+        app:layout_constraintTop_toBottomOf="@+id/BtnTwo" />
+
+    <Button
+        android:id="@+id/BtnSix"
+        android:layout_width="69dp"
+        android:layout_height="43dp"
+        android:layout_marginTop="32dp"
+        android:layout_marginEnd="60dp"
+        android:text="6"
+        android:onClick="inputNumber"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/BtnThree" />
+
+    <Button
+        android:id="@+id/BtnSeven"
+        android:layout_width="69dp"
+        android:layout_height="43dp"
+        android:layout_marginStart="68dp"
+        android:layout_marginTop="28dp"
+        android:text="7"
+        app:layout_constraintEnd_toStartOf="@+id/BtnEight"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        android:onClick="inputNumber"
+        app:layout_constraintTop_toBottomOf="@+id/BtnFour" />
+
+    <Button
+        android:id="@+id/BtnEight"
+        android:layout_width="69dp"
+        android:layout_height="43dp"
+        android:layout_marginTop="28dp"
+        android:layout_marginEnd="36dp"
+        android:text="8"
+        android:onClick="inputNumber"
+        app:layout_constraintEnd_toStartOf="@+id/Btn9"
+        app:layout_constraintTop_toBottomOf="@+id/BtnFive" />
+
+    <Button
+        android:id="@+id/BtnFour"
+        android:layout_width="69dp"
+        android:layout_height="43dp"
+        android:layout_marginStart="68dp"
+        android:layout_marginTop="32dp"
+        android:text="4"
+        android:onClick="inputNumber"
+        app:layout_constraintEnd_toStartOf="@+id/BtnFive"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/BtnOne" />
+
+    <Button
+        android:id="@+id/BtnTwo"
+        android:layout_width="69dp"
+        android:layout_height="43dp"
+        android:layout_marginTop="32dp"
+        android:layout_marginEnd="32dp"
+        android:text="2"
+        android:onClick="inputNumber"
+        app:layout_constraintEnd_toStartOf="@+id/BtnThree"
+        app:layout_constraintTop_toBottomOf="@+id/ph" />
+
+    <Button
+        android:id="@+id/BtnOne"
+        android:layout_width="69dp"
+        android:layout_height="43dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="32dp"
+        android:text="1"
+        app:layout_constraintEnd_toStartOf="@+id/BtnTwo"
+        app:layout_constraintStart_toStartOf="parent"
+        android:onClick="inputNumber"
+        app:layout_constraintTop_toBottomOf="@+id/ph" />
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="56dp"
+        android:text="Call and Save"
+        android:textSize="32dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.497"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <EditText
+        android:id="@+id/ph"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:ems="10"
+        android:inputType="phone"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.497"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView" />
+
+    <Button
+        android:id="@+id/BtnThree"
+        android:layout_width="69dp"
+        android:layout_height="43dp"
+        android:layout_marginTop="32dp"
+        android:layout_marginEnd="60dp"
+        android:text="3"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:onClick="inputNumber"
+        app:layout_constraintTop_toBottomOf="@+id/ph" />
+</androidx.constraintlayout.widget.ConstraintLayout>
